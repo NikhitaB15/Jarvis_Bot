@@ -1,0 +1,10 @@
+{
+    "assistant_name": "JARVIS",
+    "wake_word": "jarvis",
+    "voice_enabled": true,
+    "log_level": "INFO",
+    "auto_save_conversations": true,
+    "theme": "dark",
+    "language": "en-US",
+    "timezone": "UTC"
+}

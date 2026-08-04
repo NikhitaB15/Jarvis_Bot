@@ -1,0 +1,9 @@
+{
+    "name": "Jarvis",
+    "voice": {
+        "rate": 150,
+        "volume": 1.0,
+        "voice_id": 0
+    },
+    "hotword": "jarvis"
+}

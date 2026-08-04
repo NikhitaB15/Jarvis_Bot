@@ -1,0 +1,16 @@
+{
+    "windows": {
+        "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "calculator": "calc.exe",
+        "notepad": "notepad.exe",
+        "discord": "%LOCALAPPDATA%\\Discord\\Update.exe",
+        "spotify": "%APPDATA%\\Spotify\\Spotify.exe"
+    },
+    "linux": {
+        "browser": "google-chrome",
+        "calculator": "gnome-calculator",
+        "editor": "gedit",
+        "discord": "discord",
+        "spotify": "spotify"
+    }
+}

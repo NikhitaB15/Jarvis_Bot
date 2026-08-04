@@ -1,0 +1,18 @@
+[
+    {
+        "timestamp": "2025-08-09T18:33:27.197862",
+        "user_input": "can you speak about",
+        "assistant_response": "Processed command",
+        "context": {
+            "emotion": "neutral"
+        }
+    },
+    {
+        "timestamp": "2025-08-09T18:34:10.239175",
+        "user_input": "why are you stopping after one line please talk more than 19",
+        "assistant_response": "Processed command",
+        "context": {
+            "emotion": "neutral"
+        }
+    }
+]

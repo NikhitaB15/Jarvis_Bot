@@ -1,0 +1,19 @@
+{
+    "morning_routine": {
+        "enabled": false,
+        "time": "08:00",
+        "actions": [
+            "weather",
+            "calendar",
+            "news"
+        ]
+    },
+    "evening_routine": {
+        "enabled": false,
+        "time": "20:00",
+        "actions": [
+            "system_status",
+            "backup_data"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "engine": "edge-tts",
+    "neural_voice": "en-US-AvaNeural",
+    "voice_rate": 190,
+    "voice_volume": 0.9,
+    "recognition_timeout": 5,
+    "microphone_index": null,
+    "noise_threshold": 300
+}
