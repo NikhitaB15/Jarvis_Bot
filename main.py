@@ -75,9 +75,14 @@ try:
     from config.automation_manager import AutomationManager
     from config.plugin_manager import PluginManager
     from utils.speech_utils import TTSManager
+    from activity_tracker import ActivityMonitor
     ENHANCED_FEATURES = True
 except ImportError:
     from utils.speech_utils import TTSManager
+    try:
+        from activity_tracker import ActivityMonitor
+    except ImportError:
+        ActivityMonitor = None
     ENHANCED_FEATURES = False
     print("Enhanced features not available, running in basic mode")
 
@@ -242,8 +247,12 @@ class Enhancednick:
             self.automation_manager = AutomationManager(self.config_manager, self.system_controller)
             self.plugin_manager = PluginManager()
             self.plugin_manager.load_plugins()
+            self.activity_monitor = ActivityMonitor()
+            self.activity_monitor.start()
+            print("📊 Activity monitoring started")
         else:
             print("📦 Running in basic mode...")
+            self.activity_monitor = None
         
         # State variables
         self.is_running = False
@@ -850,6 +859,10 @@ class Enhancednick:
                 if ENHANCED_FEATURES:
                     try:
                         self.automation_manager.stop_scheduler()
+                    except:
+                        pass
+                    try:
+                        self.activity_monitor.stop()
                     except:
                         pass
                 break

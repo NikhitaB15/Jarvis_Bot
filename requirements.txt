@@ -8,3 +8,6 @@ numpy==1.26.4
 librosa==0.10.1 
 soundfile==0.12.1
 sounddevice==0.4.6
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
